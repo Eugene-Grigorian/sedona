@@ -11,7 +11,7 @@
 <body>
   <header class="page-header">
     <nav class="navigation">
-      <a class="logo">
+      <a class="logo" href="index.html">
         <img src="" alt="Логотип Седоны">
       </a>
 
@@ -112,15 +112,202 @@
         <fieldset class="filter-fieldset">
           <legend class="filter-title">Стоимость, ₽:</legend>
 
-          <!-- Доделать сортировку цены -->
+          <div class="range">
+            <label class="range-field">
+              <span class="range-title">от</span>
+              <input class="range-field-input" type="number" name="minimum-price" value="0" min="0" max="10000"
+                step="100">
+            </label>
+
+            <label class="range-field">
+              <span class="range-title">до</span>
+              <input class="range-field-input" type="number" name="maximum-price" value="9000" min="0" max="10000"
+                step="100">
+            </label>
+
+            <div class="range-slider slider">
+              <div class="slider-bar">
+                <button class="slider-thumb" type="button">
+                  <span class="visually-hidden">Ручка минимальной цены</span>
+                </button>
+                <button class="slider-thumb" type="button">
+                  <span class="visually-hidden">Ручка максимальной цены</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </fieldset>
+
+        <div class="filter-buttons">
+          <button class="button" type="submit">Применить</button>
+          <button class="button" type="reset">Сбросить</button>
+        </div>
       </form>
     </section>
 
     <section class="catalog">
       <h2 class="visually-hidden">Результаты поиска</h2>
+      <p class="section-title">Найдено гостиниц: 38</p>
 
+      <h3 class="visually-hidden">Сортировка и отображение</h3>
+      <details class="select">
+        <summary class="select-title">Сначала дешёвые</summary>
 
+        <ul class="select-menu">
+          <li class="select-item select-item-active">
+            <a class="select-option" href="#">Сначала дешёвые</a>
+          </li>
+          <li class="select-item">
+            <a class="select-option" href="#">Сначала дорогие</a>
+          </li>
+          <li class="select-item">
+            <a class="select-option" href="#">Сначала популярные</a>
+          </li>
+          <li class="select-item">
+            <a class="select-option" href="#">Сначала комфортные</a>
+          </li>
+        </ul>
+      </details>
+
+      <ul class="view">
+        <li class="view-item view-item-active">
+          <a class="view-link">
+            <span class="visually-hidden">Карточками</span>
+          </a>
+        </li>
+        <li class="view-item">
+          <a class="view-link" href="#">
+            <span class="visually-hidden">Слайдами</span>
+          </a>
+        </li>
+        <li class="view-item">
+          <a class="view-link" href="#">
+            <span class="visually-hidden">Списком</span>
+          </a>
+        </li>
+      </ul>
+
+      <h3 class="visually-hidden">Список гостиниц</h3>
+      <article class="card">
+        <h4 class="card-title">
+          <a class="card-link" href="#">Amara Resort & Spa</a>
+        </h4>
+        <img class="card-image" src="" alt="Курорт Амара">
+        <p class="card-description">
+          <span class="card-description-title">Гостиница</span>
+          <span class="card-description-price">От 4000 ₽</span>
+        </p>
+        <p class="card-buttons">
+          <a class="button" href="#">Подробнее</a>
+          <a class="button" href="#">В избранное</a>
+        </p>
+        <p class="star star-four">
+          <span class="visually-hidden">4 звезды</span>
+        </p>
+        <p class="card-rate">Рейтинг: 8,5</p>
+      </article>
+      <article class="card">
+        <h4 class="card-title">
+          <a class="card-link" href="#">Desert Quail Inn</a>
+        </h4>
+        <img class="card-image" src="" alt="Гостиница Пустынная перепелка">
+        <p class="card-description">
+          <span class="card-description-title">Гостиница</span>
+          <span class="card-description-price">От 3000 ₽</span>
+        </p>
+        <p class="card-buttons">
+          <a class="button" href="#">Подробнее</a>
+          <a class="button" href="#">В избранное</a>
+        </p>
+        <p class="star star-three">
+          <span class="visually-hidden">3 звезды</span>
+        </p>
+        <p class="card-rate">Рейтинг: 8,9</p>
+      </article>
+      <article class="card">
+        <h4 class="card-title">
+          <a class="card-link" href="#">Villas at Poco Diablo</a>
+        </h4>
+        <img class="card-image" src="" alt="Виллы в Поко Дьябло">
+        <p class="card-description">
+          <span class="card-description-title">Гостиница</span>
+          <span class="card-description-price">От 2000 ₽</span>
+        </p>
+        <p class="card-buttons">
+          <a class="button" href="#">Подробнее</a>
+          <a class="button" href="#">В избранное</a>
+        </p>
+        <p class="star star-two">
+          <span class="visually-hidden">2 звезды</span>
+        </p>
+        <p class="card-rate">Рейтинг: 9,2</p>
+      </article>
+      <article class="card">
+        <h4 class="card-title">
+          <a class="card-link" href="#">GreenTree Inn</a>
+        </h4>
+        <img class="card-image" src="" alt="Гостиница ГринТри">
+        <p class="card-description">
+          <span class="card-description-title">Гостиница</span>
+          <span class="card-description-price">От 3000 ₽</span>
+        </p>
+        <p class="card-buttons">
+          <a class="button" href="#">Подробнее</a>
+          <a class="button" href="#">В избранное</a>
+        </p>
+        <p class="star star-two">
+          <span class="visually-hidden">2 звезды</span>
+        </p>
+        <p class="card-rate">Рейтинг: 9,2</p>
+      </article>
+
+      <div class="pagination">
+        <button class="button" type="button">Загрузить ещё</button>
+
+        <h3 class="visually-hidden">Список страниц</h3>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-active">
+            <a class="pagination-link" href="#">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">...</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">10</a>
+          </li>
+        </ul>
+
+        <div class="pagination-select">
+          <p class="pagination-select-title">Гостиниц на странице:</p>
+          <details class="select">
+            <summary class="select-title">4</summary>
+
+            <ul class="select-menu">
+              <li class="select-item select-item-active">
+                <a class="select-option" href="#">5</a>
+              </li>
+              <li class="select-item">
+                <a class="select-option" href="#">6</a>
+              </li>
+              <li class="select-item">
+                <a class="select-option" href="#">9</a>
+              </li>
+              <li class="select-item">
+                <a class="select-option" href="#">12</a>
+              </li>
+            </ul>
+          </details>
+        </div>
+      </div>
     </section>
 
     <section class="newsletter">
