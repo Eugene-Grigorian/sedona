@@ -73,12 +73,17 @@ h3.advantages-title {
 }
 
 .newsletter {
+  background-image: url("/img/background/newsletter.jpg");
   color: #FFFFFF;
 }
 
 .newsletter-button {
   background: #83B3D3;
   border-radius: 0px 10px 10px 0px;
+}
+
+.filter {
+  background-image: url("/img/background/filter.jpg");
 }
 
 .page-footer-phone {
