@@ -14,7 +14,7 @@
   font-display: swap;
 }
 
-body {
+.page {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -50,26 +50,42 @@ body {
   text-align: center;
 }
 
-.navigation-link {
+.navigation-list {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
+}
+
+.navigation-link {
   color: #000000;
-  background-color: #ffffff;
   text-decoration: none;
 }
 
-h3.advantages-title {
+.advantages-list {
+  list-style-type: none;
+}
+
+.advantages-item-large {
+  color: #FFFFFF;
+  background-color: #83B3D3;
+}
+
+.advantages-list-inner {
+  color: #333333;
+  background-color: #FFFFFF;
+  list-style-type: none;
+}
+
+.advantages-title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
 }
 
-.search {
-  line-height: 36px;
+.search-button {
+  font-size: 20px;
 }
 
 .newsletter {
@@ -78,7 +94,9 @@ h3.advantages-title {
 }
 
 .newsletter-button {
+  font-size: 20px;
   background: #83B3D3;
+  border-color: #83B3D3;
   border-radius: 0px 10px 10px 0px;
 }
 
