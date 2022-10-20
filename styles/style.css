@@ -2,16 +2,16 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
+  src: url("/fonts/ptsans-400.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
+  src: url("/fonts/ptsans-700.woff2") format("woff2");
 }
 
 .page {
@@ -24,13 +24,10 @@
 
 .button {
   font-family: inherit;
-  font-size: 16px;
-  line-height: 20px;
   font-weight: 700;
-  text-align: center;
   color: #FFFFFF;
-  background: #756257;
-  border-radius: 10px;
+  border-radius: 4px;
+  background-color: #756257;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -39,7 +36,6 @@
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  text-align: center;
   text-transform: uppercase;
   color: #000000;
 }
@@ -47,7 +43,6 @@
 .section-description {
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
 }
 
 .navigation-list {
@@ -59,6 +54,22 @@
 .navigation-link {
   color: #000000;
   text-decoration: none;
+}
+
+.user-menu-button {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.main-header {
+  color: #ffffff;
+  background-color: #83B3D3;
+  background-image: url("/img/background/filter.jpg");
+  background-size: cover;
+}
+
+.advantages .section-description {
+  line-height: 36px;
 }
 
 .advantages-list {
@@ -80,34 +91,186 @@
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  text-align: center;
+  color: #000000;
   text-transform: uppercase;
+}
+
+.advantages-item-large-title {
+  color: #FFFFFF;
 }
 
 .search-button {
   font-size: 20px;
+  line-height: 36px;
+  border-radius: 10px;
 }
 
-.newsletter {
-  background-image: url("/img/background/newsletter.jpg");
+.newsletter-primary {
+  background-color: #83B3D3;
+  background-image: url("../img/background/newsletter.jpg");
+  background-size: cover;
+}
+
+.newsletter-primary-title {
   color: #FFFFFF;
+}
+
+.field-input {
+  font-size: 18px;
+  line-height: 26px;
+  background-color: #F2F2F2;
+  border-radius: 0px 10px 10px 0px;
 }
 
 .newsletter-button {
   font-size: 20px;
-  background: #83B3D3;
-  border-color: #83B3D3;
+  line-height: 26px;
+  background-color: #83B3D3;
+  border-color: transparent;
   border-radius: 0px 10px 10px 0px;
 }
 
+/* Catalog */
+
+.page-main-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.breadcrumbs {
+  font-size: 16px;
+  list-style-type: none;
+}
+
 .filter {
+  color: #FFFFFF;
   background-image: url("/img/background/filter.jpg");
+}
+
+.filter-title {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.filter-list {
+  list-style-type: none;
+}
+
+.control-lead {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.range-field {
+  line-height: 23px;
+}
+
+.range-title {
+  opacity: 0.3;
+}
+
+.filter-buttons-submit {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  background-color: #83B3D3;
+  border-color: #83B3D3;
+  border-radius: 4px;
+}
+
+.filter-buttons-reset {
+  font-size: 18px;
+  line-height: 23px;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.catalog-title {
+  font-size: 30px;
+  line-height: 39px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.select {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.select-menu {
+  list-style-type: none;
+}
+
+.select-option {
+  color: #333333;
+  text-decoration: none;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31px;
+}
+
+.card-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.card-description {
+  line-height: 23px;
+}
+
+.card-buttons {
+  font-size: 16px;
+}
+
+.favorites-button {
+  background-color: #83B3D3;
+}
+
+.favorites-button-selected {
+  background-color: #7DB54F;
+}
+
+.card-rate {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.pagination-button {
+  font-size: 20px;
+  line-height: 26px;
+  background-color: #83B3D3;
+  border-color: transparent;
+}
+
+.pagination-list {
+  list-style-type: none;
+}
+
+.pagination-link {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-decoration: none;
+  background-color: #83B3D3;
+  border-radius: 4px;
+}
+
+.pagination-select-title {
+  line-height: 23px;
 }
 
 .page-footer-phone {
   font-size: 40px;
   line-height: 40px;
   color: #000000;
-  text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
 }
