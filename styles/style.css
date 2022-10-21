@@ -26,7 +26,6 @@
   font-family: inherit;
   font-weight: 700;
   color: #FFFFFF;
-  border-radius: 4px;
   background-color: #756257;
   text-decoration: none;
   text-transform: uppercase;
@@ -44,6 +43,8 @@
   font-size: 22px;
   line-height: 26px;
 }
+
+/* Index */
 
 .navigation-list {
   font-size: 20px;
@@ -72,8 +73,8 @@
   line-height: 36px;
 }
 
-.advantages-list {
-  list-style-type: none;
+.advantages-item {
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-item-large {
@@ -84,7 +85,14 @@
 .advantages-list-inner {
   color: #333333;
   background-color: #FFFFFF;
-  list-style-type: none;
+}
+
+.advantages-item-bright {
+  background-color: #FFFFFF;
+}
+
+.advantages-item-dark {
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-title {
@@ -102,10 +110,10 @@
 .search-button {
   font-size: 20px;
   line-height: 36px;
-  border-radius: 10px;
 }
 
 .newsletter-primary {
+  color: #FFFFFF;
   background-color: #83B3D3;
   background-image: url("../img/background/newsletter.jpg");
   background-size: cover;
@@ -116,18 +124,16 @@
 }
 
 .field-input {
+  font-family: inherit;
   font-size: 18px;
   line-height: 26px;
   background-color: #F2F2F2;
-  border-radius: 0px 10px 10px 0px;
 }
 
 .newsletter-button {
   font-size: 20px;
   line-height: 26px;
   background-color: #83B3D3;
-  border-color: transparent;
-  border-radius: 0px 10px 10px 0px;
 }
 
 /* Catalog */
@@ -141,22 +147,12 @@
 
 .breadcrumbs {
   font-size: 16px;
-  list-style-type: none;
-}
-
-.filter {
-  color: #FFFFFF;
-  background-image: url("/img/background/filter.jpg");
 }
 
 .filter-title {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
-}
-
-.filter-list {
-  list-style-type: none;
 }
 
 .control-lead {
@@ -168,6 +164,13 @@
   line-height: 23px;
 }
 
+.range-input {
+  color: #ffffff;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 18px;
+}
+
 .range-title {
   opacity: 0.3;
 }
@@ -177,15 +180,12 @@
   line-height: 21px;
   font-weight: 700;
   background-color: #83B3D3;
-  border-color: #83B3D3;
-  border-radius: 4px;
 }
 
 .filter-buttons-reset {
   font-size: 18px;
   line-height: 23px;
   background-color: transparent;
-  border-color: transparent;
 }
 
 .catalog-title {
@@ -199,10 +199,6 @@
 .select {
   font-size: 18px;
   line-height: 23px;
-}
-
-.select-menu {
-  list-style-type: none;
 }
 
 .select-option {
@@ -246,11 +242,6 @@
   font-size: 20px;
   line-height: 26px;
   background-color: #83B3D3;
-  border-color: transparent;
-}
-
-.pagination-list {
-  list-style-type: none;
 }
 
 .pagination-link {
@@ -260,7 +251,6 @@
   line-height: 26px;
   text-decoration: none;
   background-color: #83B3D3;
-  border-radius: 4px;
 }
 
 .pagination-select-title {
